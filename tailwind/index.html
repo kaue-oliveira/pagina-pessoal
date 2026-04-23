@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kauê de Oliveira | Versão Tailwind</title>
+  <meta name="description" content="Página pessoal de Kauê de Oliveira usando Tailwind CSS.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kauê de Oliveira | Versão Tailwind">
+  <meta property="og:description" content="Página pessoal com Tailwind CSS, tema claro/escuro e portfolio de projetos.">
+  <meta property="og:url" content="https://SEU-USUARIO.github.io/SEU-REPOSITORIO/tailwind/">
+  <meta property="og:image" content="../assets/preview-card.svg">
+  <meta property="og:image:alt" content="Preview da versão Tailwind da página pessoal">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kauê de Oliveira | Versão Tailwind">
+  <meta name="twitter:description" content="Visual editorial elegante com Tailwind CSS.">
+  <meta name="twitter:image" content="../assets/preview-card.svg">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#inicio" class="brand-mark">K.A.</a>
+      <button type="button" class="md:hidden theme-toggle" data-mobile-toggle aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      <ul class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <li><a href="#sobre" class="hover:opacity-80">Sobre</a></li>
+        <li><a href="#formacao" class="hover:opacity-80">Formação</a></li>
+        <li><a href="#habilidades" class="hover:opacity-80">Habilidades</a></li>
+        <li><a href="#projetos" class="hover:opacity-80">Projetos</a></li>
+        <li><a href="#contato" class="hover:opacity-80">Contato</a></li>
+        <li><button class="theme-toggle" data-theme-toggle type="button">Tema claro</button></li>
+      </ul>
+    </nav>
+
+    <div id="mobileMenu" data-mobile-menu class="hidden border-t" style="border-color: var(--line);">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3">
+        <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <button class="theme-toggle w-max" data-theme-toggle type="button">Tema claro</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div class="hero-center-mobile reveal">
+          <span class="eyebrow">Kauê de Oliveira</span>
+          <h1>Backend Com Elegância, Escala E Clareza</h1>
+          <p class="lead">Graduando em Ciência da Computação pela UFLA, focado em Java, Spring Boot e sistemas complexos. Construo soluções memoráveis, robustas e fáceis de evoluir.</p>
+          <div class="action-row">
+            <a href="#projetos" class="btn-solid">Ver projetos</a>
+            <a href="#contato" class="btn-outline">Entrar em contato</a>
+          </div>
+        </div>
+        <div class="flex justify-center reveal">
+          <div class="hero-photo">
+            <img src="../image.png" alt="Foto de Kauê de Oliveira" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title reveal">Sobre Mim</h2>
+        <p class="section-subtitle reveal">Nascido na grande São Paulo, movido por tecnologia e criatividade aplicada.</p>
+        <div class="grid lg:grid-cols-3 gap-4">
+          <article class="panel p-5 lg:col-span-2 reveal">
+            <p>Sou apaixonado por transformar ideias em software de verdade. Gosto de resolver problemas difíceis com arquitetura limpa, testes e atenção aos detalhes do produto.</p>
+            <p>Meu foco principal está em backend com Java e Spring Boot, mas também transito bem no frontend quando o produto precisa de consistência ponta a ponta.</p>
+            <p class="mb-0">Nos momentos livres, estudo tópicos variados, jogo e busco repertório fora da bolha técnica para criar soluções melhores.</p>
+          </article>
+          <article class="panel p-5 reveal">
+            <h3 class="text-2xl font-semibold mb-3">Perfil</h3>
+            <p class="mb-2"><strong>Local:</strong> Barueri, São Paulo</p>
+            <p class="mb-2"><strong>Idiomas:</strong> Português, Inglês, Francês (em estudo)</p>
+            <p class="mb-0"><strong>Objetivo:</strong> Construir softwares memoráveis usados por muita gente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="section">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title reveal">Formação</h2>
+        <div class="timeline reveal">
+          <article class="panel-soft p-5 timeline-item">
+            <h3 class="text-2xl font-semibold mb-2">Ciência da Computação</h3>
+            <p class="mb-1">Universidade Federal de Lavras (UFLA)</p>
+            <small>Graduação em andamento</small>
+          </article>
+          <article class="panel-soft p-5 timeline-item">
+            <h3 class="text-2xl font-semibold mb-2">FIEB - Mariah Theodora</h3>
+            <p class="mb-1">Medalhista em olimpíadas de matemática (OBMEP, Paulista e Canguru).</p>
+          </article>
+          <article class="panel-soft p-5 timeline-item">
+            <h3 class="text-2xl font-semibold mb-2">Curso de Inglês</h3>
+            <p class="mb-0">Wizard</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title reveal">Habilidades</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <article class="panel p-5 reveal">
+            <h3 class="text-2xl font-semibold mb-3">Backend</h3>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Spring Data</span>
+              <span class="chip">REST APIs</span>
+            </div>
+          </article>
+          <article class="panel p-5 reveal">
+            <h3 class="text-2xl font-semibold mb-3">Frontend</h3>
+            <div class="chips">
+              <span class="chip">Angular</span>
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">Bootstrap</span>
+            </div>
+          </article>
+          <article class="panel p-5 reveal">
+            <h3 class="text-2xl font-semibold mb-3">Dados</h3>
+            <div class="chips">
+              <span class="chip">SQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MongoDB</span>
+            </div>
+          </article>
+          <article class="panel p-5 reveal">
+            <h3 class="text-2xl font-semibold mb-3">Ferramentas</h3>
+            <div class="chips">
+              <span class="chip">Git</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">IntelliJ IDEA</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Linux</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title reveal">Projetos Em Destaque</h2>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+          <article class="panel p-5 project-card reveal">
+            <h3 class="text-2xl font-semibold mb-0">Knowledge Map</h3>
+            <p>Plataforma para exploração de conhecimento por grafos interativos com Angular no frontend e Spring Boot no backend.</p>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">Spring</span>
+              <span class="chip">Angular</span>
+            </div>
+            <a class="project-link" href="https://github.com/kaue-oliveira/knowledgeMap" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </article>
+
+          <article class="panel p-5 project-card reveal">
+            <h3 class="text-2xl font-semibold mb-0">NASA Gallery</h3>
+            <p>Aplicação responsiva que consome APIs públicas da NASA, construída com React, TypeScript e Bootstrap.</p>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Bootstrap</span>
+            </div>
+            <a class="project-link" href="https://github.com/kaue-oliveira/nasa-gallery" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </article>
+
+          <article class="panel p-5 project-card reveal">
+            <h3 class="text-2xl font-semibold mb-0">Museu Aberto</h3>
+            <p>Galeria digital com Angular + Spring Boot, integrando API do Met Museum e Wikipedia com cache e busca por sessão.</p>
+            <div class="chips">
+              <span class="chip">Java 17</span>
+              <span class="chip">Spring</span>
+              <span class="chip">Angular</span>
+            </div>
+            <a class="project-link" href="https://github.com/kaue-oliveira/museu-aberto" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section text-center">
+      <div class="max-w-6xl mx-auto px-4 reveal">
+        <h2 class="section-title">Contato</h2>
+        <p class="section-subtitle">Se quiser conversar sobre tecnologia, projetos ou oportunidades, vamos falar.</p>
+        <div class="contact-pills">
+          <a class="contact-pill" href="mailto:kaueolivsil@gmail.com">✉️ Email</a>
+          <a class="contact-pill" href="https://github.com/kaue-oliveira" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+          <a class="contact-pill" href="https://www.linkedin.com/in/kau%C3%AA-oliveira-577441258/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mb-1">© 2026 Kauê de Oliveira</p>
+    <small>Versão Tailwind CSS</small>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

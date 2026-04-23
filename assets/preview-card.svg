@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Preview da página pessoal de Kauê de Oliveira">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#13191d"/>
+      <stop offset="100%" stop-color="#1f2b31"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#202a30"/>
+      <stop offset="100%" stop-color="#172026"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="160" cy="100" r="160" fill="#6f9f81" opacity="0.08"/>
+  <circle cx="1050" cy="0" r="220" fill="#8fbe9f" opacity="0.08"/>
+
+  <rect x="90" y="85" width="1020" height="460" rx="28" fill="url(#panel)" stroke="#2f3c44"/>
+
+  <text x="140" y="185" fill="#8fbe9f" font-size="26" font-family="Manrope, Segoe UI, sans-serif" font-weight="800">Kauê de Oliveira</text>
+  <text x="140" y="255" fill="#f2ede3" font-size="66" font-family="Cormorant Garamond, Georgia, serif" font-weight="700">Página Pessoal</text>
+  <text x="140" y="320" fill="#f2ede3" font-size="66" font-family="Cormorant Garamond, Georgia, serif" font-weight="700">Bootstrap + Tailwind</text>
+
+  <text x="140" y="388" fill="#c1b8ab" font-size="30" font-family="Manrope, Segoe UI, sans-serif">Backend, Java, Spring Boot e projetos em destaque.</text>
+
+  <rect x="140" y="435" width="350" height="54" rx="27" fill="#6f9f81"/>
+  <text x="315" y="470" fill="#102017" font-size="24" text-anchor="middle" font-family="Manrope, Segoe UI, sans-serif" font-weight="800">Portfolio pessoal</text>
+
+  <text x="940" y="500" fill="#8fbe9f" font-size="46" text-anchor="middle" font-family="Manrope, Segoe UI, sans-serif" font-weight="800">K.A.</text>
+</svg>
