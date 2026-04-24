@@ -24,27 +24,40 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-y-2">
       <a href="#inicio" class="brand-mark">K.A.</a>
-      <button type="button" class="md:hidden theme-toggle" data-mobile-toggle aria-expanded="false" aria-controls="mobileMenu">Menu</button>
-      <ul class="hidden md:flex items-center gap-6 text-sm font-semibold">
+      <div class="flex items-center gap-2 md:hidden">
+        <a href="../index.html" class="version-switch text-sm" title="Ver versão com Bootstrap">Bootstrap</a>
+        <button type="button" class="theme-toggle text-sm" data-mobile-toggle aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      </div>
+      <!-- Menu Desktop -->
+      <ul class="hidden md:flex items-center gap-4 text-sm font-semibold flex-wrap">
         <li><a href="#sobre" class="hover:opacity-80">Sobre</a></li>
         <li><a href="#formacao" class="hover:opacity-80">Formação</a></li>
+        <li><a href="#experiencia" class="hover:opacity-80">Experiência</a></li>
         <li><a href="#habilidades" class="hover:opacity-80">Habilidades</a></li>
         <li><a href="#projetos" class="hover:opacity-80">Projetos</a></li>
+        <li><a href="#interesses" class="hover:opacity-80">Interesses</a></li>
         <li><a href="#contato" class="hover:opacity-80">Contato</a></li>
+        <li><a href="../index.html" class="version-switch" title="Ver versão com Bootstrap">Versão Bootstrap</a></li>
         <li><button class="theme-toggle" data-theme-toggle type="button">Tema claro</button></li>
       </ul>
     </nav>
 
+    <!-- Menu Mobile -->
     <div id="mobileMenu" data-mobile-menu class="hidden border-t" style="border-color: var(--line);">
       <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3">
         <a href="#sobre">Sobre</a>
         <a href="#formacao">Formação</a>
+        <a href="#experiencia">Experiência</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#projetos">Projetos</a>
+        <a href="#interesses">Interesses</a>
         <a href="#contato">Contato</a>
-        <button class="theme-toggle w-max" data-theme-toggle type="button">Tema claro</button>
+        <div class="flex items-center gap-3 flex-wrap">
+          <a href="../index.html" class="version-switch">Versão Bootstrap</a>
+          <button class="theme-toggle w-max" data-theme-toggle type="button">Tema claro</button>
+        </div>
       </div>
     </div>
   </header>
@@ -76,13 +89,14 @@
         <div class="grid lg:grid-cols-3 gap-4">
           <article class="panel p-5 lg:col-span-2 reveal">
             <p>Gosto de transformar ideias em software de verdade. Gosto de resolver problemas difíceis com arquitetura limpa, testes e atenção aos detalhes do produto.</p>
-            <p>Meu foco principal está em backend com Java e Spring Boot, mas também transito bem no frontend quando o produto precisa de consistência ponta a ponta.</p>
+            <p>Meu foco principal está em backend com Java e Spring Boot, mas também transito bem no frontend quando o produto precisa de consistência ponta a ponta. Atualmente atuo como desenvolvedor na Agência Zetta, onde aplico meus conhecimentos em projetos reais e desafiadores.</p>
             <p class="mb-0">Nos momentos livres, estudo tópicos variados, jogo e busco repertório para criar soluções melhores.</p>
           </article>
           <article class="panel p-5 reveal">
             <h3 class="text-2xl font-semibold mb-3">Perfil</h3>
             <p class="mb-2"><strong>Local:</strong> Barueri, São Paulo</p>
-            <p class="mb-2"><strong>Idiomas:</strong> Português, Inglês, Francês (em estudo)</p>
+            <p class="mb-2"><strong>Experiência:</strong> Agência Zetta</p>
+            <p class="mb-2"><strong>Idiomas:</strong> Português, Inglês, Espanhol, Francês</p>
             <p class="mb-0"><strong>Objetivo:</strong> Construir softwares memoráveis usados por muita gente.</p>
           </article>
         </div>
@@ -91,20 +105,50 @@
 
     <section id="formacao" class="section">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="section-title reveal">Formação</h2>
+        <h2 class="section-title reveal">Formação & Idiomas</h2>
         <div class="timeline reveal">
           <article class="panel-soft p-5 timeline-item">
             <h3 class="text-2xl font-semibold mb-2">Ciência da Computação</h3>
             <p class="mb-1">Universidade Federal de Lavras (UFLA)</p>
-            <small>Graduação em andamento</small>
+            <small>Graduação em andamento — Início em 2023, previsão de formatura em 2027</small>
           </article>
           <article class="panel-soft p-5 timeline-item">
             <h3 class="text-2xl font-semibold mb-2">FIEB - Mariah Theodora</h3>
-            <p class="mb-1">Medalhista em olimpíadas de matemática (OBMEP, Paulista e Canguru).</p>
+            <p class="mb-1">Ensino médio concluído em 2022.</p>
+            <small>Medalhista em olimpíadas de matemática (OBMEP, Paulista e Canguru).</small>
           </article>
           <article class="panel-soft p-5 timeline-item">
-            <h3 class="text-2xl font-semibold mb-2">Curso de Inglês</h3>
-            <p class="mb-0">Wizard</p>
+            <h3 class="text-2xl font-semibold mb-2">Idiomas</h3>
+            <p class="mb-0">🇧🇷 Português (nativo) &nbsp;|&nbsp; 🇺🇸 Inglês (avançado) &nbsp;|&nbsp; 🇪🇸 Espanhol (nível médio) &nbsp;|&nbsp; 🇫🇷 Francês (iniciante)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title reveal">Experiência Profissional</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <article class="panel p-5 reveal">
+            <h3 class="text-2xl font-semibold mb-2">Agência Zetta</h3>
+            <p class="text-sm mb-2" style="color: var(--muted);">Desenvolvedor (Angular & Spring Boot)</p>
+            <p>Participei de um projeto estratégico para o <strong>Ministério da Gestão e Inovação</strong>, voltado à melhoria do <strong>Cadastro Ambiental Rural (CAR)</strong>. Atuei tanto no frontend (Angular) quanto no backend (Spring Boot), entregando funcionalidades escaláveis e seguras, integrando sistemas governamentais e aplicando boas práticas de arquitetura limpa e testes.</p>
+            <div class="chips">
+              <span class="chip">Angular</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">APIs REST</span>
+              <span class="chip">Governo Digital</span>
+            </div>
+          </article>
+          <article class="panel p-5 reveal">
+            <h3 class="text-2xl font-semibold mb-2">Monitor de Grafos</h3>
+            <p class="text-sm mb-2" style="color: var(--muted);">UFLA — Disciplina de Grafos</p>
+            <p>Atuei como monitor auxiliando colegas na resolução de problemas práticos com algoritmos clássicos (Dijkstra, Prim, Floyd-Warshall e busca em profundidade). Preparei listas de exercícios e dei plantões de dúvidas, reforçando a base teórica da turma.</p>
+            <div class="chips">
+              <span class="chip">Algoritmos</span>
+              <span class="chip">Estruturas de Dados</span>
+              <span class="chip">Ensino</span>
+            </div>
           </article>
         </div>
       </div>
@@ -168,7 +212,7 @@
               <span class="chip">Spring</span>
               <span class="chip">Angular</span>
             </div>
-            <a class="project-link" href="https://github.com/kaue-oliveira/knowledgeMap" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+            <a class="project-link" href="https://github.com/kaue-oliveira/knowledgeMap" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
           </article>
 
           <article class="panel p-5 project-card reveal">
@@ -179,7 +223,7 @@
               <span class="chip">TypeScript</span>
               <span class="chip">Bootstrap</span>
             </div>
-            <a class="project-link" href="https://github.com/kaue-oliveira/nasa-gallery" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+            <a class="project-link" href="https://github.com/kaue-oliveira/nasa-gallery" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
           </article>
 
           <article class="panel p-5 project-card reveal">
@@ -190,8 +234,24 @@
               <span class="chip">Spring</span>
               <span class="chip">Angular</span>
             </div>
-            <a class="project-link" href="https://github.com/kaue-oliveira/museu-aberto" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+            <a class="project-link" href="https://github.com/kaue-oliveira/museu-aberto" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="interesses" class="section">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="section-title reveal">Interesses</h2>
+        <p class="section-subtitle reveal">Tópicos que me movem e guiam meus estudos além da grade curricular.</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="chip reveal">Algoritmos & Grafos</span>
+          <span class="chip reveal">Arquitetura Limpa</span>
+          <span class="chip reveal">Design de APIs</span>
+          <span class="chip reveal">Jogos Digitais</span>
+          <span class="chip reveal">Compiladores</span>
+          <span class="chip reveal">Machine Learning</span>
+          <span class="chip reveal">Código Aberto</span>
         </div>
       </div>
     </section>

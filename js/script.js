@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
 
       const menu = document.querySelector("[data-mobile-menu]");
-      if (menu) menu.classList.add("d-none", "hidden");
+      if (menu) menu.classList.add("hidden");
     });
   });
 
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.querySelector("[data-mobile-menu]");
   if (mobileToggle && mobileMenu) {
     mobileToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("d-none");
       mobileMenu.classList.toggle("hidden");
     });
   }
